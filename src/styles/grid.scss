@@ -1,0 +1,24 @@
+$breakpoints: (
+	small-mobile: $grid-x-small, // default
+	mobile: $grid-small, // small devices (landscape phones, 576px and up)
+	tablet: $grid-medium, // medium devices (tablets, 768px and up)
+	small-desktop: $grid-large, // large devices (desktops, 992px and up)
+	desktop: $grid-extra-large, // x-large devices (large desktops, 1200px and up)
+	large-desktop: $grid-extra-extra-large // xx-large devices (larger desktops, 1312px and up)
+) !default;
+
+@mixin breakpoint($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	} @else if type_of($breakpoint) == number and unit($breakpoint) == px {
+		@media (min-width: $breakpoint) {
+			@content;
+		}
+	} @else {
+		@media ($breakpoint) {
+			@content;
+		}
+	}
+}

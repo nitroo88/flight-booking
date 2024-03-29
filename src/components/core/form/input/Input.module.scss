@@ -1,0 +1,14 @@
+.wrapper {
+	width: 100%;
+
+	.input {
+		width: 100%;
+		height: rem-calc(42px);
+		font-size: rem-calc(14px);
+
+		&[type="number"] {
+			margin: 0;
+			appearance: textfield;
+		}
+	}
+}

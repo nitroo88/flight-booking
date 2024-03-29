@@ -1,14 +1,5 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
 @import "base";
-
-/*=============================
-	Typography
-===============================*/
-
-:root {
-	--bs-gutter-x: 15px !important;
-}
 
 body {
 	font-family: var(--font-inter);
@@ -17,40 +8,6 @@ body {
 
 img {
 	max-width: 100%;
-	transition: all 0.3s ease-out 0s;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
-
-h1 {
-	font-size: 40px;
-}
-
-h2 {
-	font-size: 35px;
-}
-
-h3 {
-	font-size: 28px;
-}
-
-h4 {
-	font-size: 22px;
-}
-
-h5 {
-	font-size: 18px;
-}
-
-h6 {
-	font-size: 16px;
 }
 
 p {

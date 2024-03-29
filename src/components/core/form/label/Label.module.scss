@@ -1,0 +1,15 @@
+.wrapper {
+	.label {
+		margin-bottom: 0;
+		font-size: rem-calc(14px);
+		font-weight: 500;
+		text-transform: uppercase;
+
+		&.required {
+			&:after {
+				color: var(--bs-form-invalid-color);
+				content: " *";
+			}
+		}
+	}
+}

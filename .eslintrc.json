@@ -185,7 +185,7 @@
 			"forbid": [
 				{
 					"propName": "className",
-					"allowedFor": ["Image"]
+					"allowedFor": ["Alert.Heading", "Form", "FormControl", "FormControl.Feedback", "FormLabel", "Image"]
 				}
 			]
 		}],
